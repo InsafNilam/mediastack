@@ -300,6 +300,9 @@ mkcert huntarr.local filebot.local unpackerr.local whisparr.local mylar.local sa
 
 mv media.local+15.pem mediastack.crt
 mv media.local+15-key.pem mediastack.key
+
+# verifies mediastack.crt covers all listed local dns
+openssl x509 -in mediastack.crt -text -noout | grep -A1 "Subject Alternative Name"
 ```
 
 ---
