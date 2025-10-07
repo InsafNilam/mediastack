@@ -645,7 +645,7 @@ services:
       ## Mylar Settings
       ## Mylar Config - Copy API Key from: http://mylar:8090/general/settings
       - UN_MYLAR_0_URL=http://172.28.10.2:8090
-      - UN_MYLAR_0_API_KEY=84e6fe657250274dabb1d218c334a5f4
+      - UN_MYLAR_0_API_KEY=<mylar_api_key>
       - UN_MYLAR_0_PATHS_0=/data/torrents/comics
       - UN_MYLAR_0_PROTOCOLS=torrent
       - UN_MYLAR_0_TIMEOUT=10s
@@ -655,7 +655,7 @@ services:
       ## Sonarr Settings
       ## Sonarr Config - Copy API Key from: http://sonarr:8989/general/settings
       - UN_SONARR_0_URL=http://172.28.10.2:8989
-      - UN_SONARR_0_API_KEY=6effdfe43b4b41e48e2fbaaadf853239
+      - UN_SONARR_0_API_KEY=<sonarr_api_key>
       - UN_SONARR_0_PATHS_0=/data/torrents/anime
       - UN_SONARR_0_PATHS_1=/data/torrents/tv
       - UN_SONARR_0_PROTOCOLS=torrent
@@ -666,7 +666,7 @@ services:
       ## Radarr Settings
       ## Radarr Config - Copy API Key from: http://radarr:7878/general/settings
       - UN_RADARR_0_URL=http://172.28.10.2:7878
-      - UN_RADARR_0_API_KEY=2b67a9156d2045e1bbc6236c65b3bd54
+      - UN_RADARR_0_API_KEY=<radarr_api_key>
       - UN_RADARR_0_PATHS_0=/data/torrents/movies
       - UN_RADARR_0_PROTOCOLS=torrent
       - UN_RADARR_0_TIMEOUT=10s
@@ -676,7 +676,7 @@ services:
       ## Lidarr Settings
       ## Lidarr Config - Copy API Key from: http://lidarr:8686/general/settings
       - UN_LIDARR_0_URL=http://172.28.10.2:8686
-      - UN_LIDARR_0_API_KEY=e4a95e697f0442ca97dbdfe9dd9747b3
+      - UN_LIDARR_0_API_KEY=<lidarr_api_key>
       - UN_LIDARR_0_PATHS_0=/data/torrents/music
       - UN_LIDARR_0_PROTOCOLS=torrent
       - UN_LIDARR_0_TIMEOUT=10s
@@ -686,7 +686,7 @@ services:
       ## Readarr Settings
       ## Readarr Config - Copy API Key from: http://readarr:8787/general/settings
       - UN_READARR_0_URL=http://172.28.10.2:8787
-      - UN_READARR_0_API_KEY=3bb2bf07017a480a8e002e292f81d9b0
+      - UN_READARR_0_API_KEY=<readarr_api_key>
       - UN_READARR_0_PATHS_0=/data/torrents/books
       - UN_READARR_0_PROTOCOLS=torrent
       - UN_READARR_0_TIMEOUT=10s
@@ -696,7 +696,7 @@ services:
       ## Whisparr Settings
       ## Whisparr Config - Copy API Key from: http://whisparr:6969/general/settings
       - UN_WHISPARR_0_URL=http://172.28.10.2:6969
-      - UN_WHISPARR_0_API_KEY=a74e59c67a53476c9ae56ba6ce81822b
+      - UN_WHISPARR_0_API_KEY=<whisparr_api_key>
       - UN_WHISPARR_0_PATHS_0=/data/torrents/xxx
       - UN_WHISPARR_0_PROTOCOLS=torrent
       - UN_WHISPARR_0_TIMEOUT=10s
