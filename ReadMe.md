@@ -54,15 +54,15 @@ Unlike most ARR stacks, Mediastack focuses on:
 
 | Service         | Role / Purpose           | Access URL                  |
 | --------------- | ------------------------ | --------------------------- |
-| **Sonarr**      | TV show automation (VPN) | `https://sonarr.local`      |
-| **Radarr**      | Movie automation (VPN)   | `https://radarr.local`      |
-| **Lidarr**      | Music automation (VPN)   | `https://lidarr.local`      |
-| **Readarr**     | Book automation (VPN)    | `https://readarr.local`     |
-| **Mylar**       | Comic automation (VPN)   | `https://mylar.local`       |
-| **Bazarr**      | Subtitle manager (VPN)   | `https://bazarr.local`      |
-| **Prowlarr**    | Indexer manager (VPN)    | `https://prowlarr.local`    |
-| **qBittorrent** | Torrent client (VPN)     | `https://qbittorrent.local` |
-| **SABnzbd**     | Usenet downloader (VPN)  | `https://sabnzbd.local`     |
+| **Sonarr**      | TV show automation       | `https://sonarr.local`      |
+| **Radarr**      | Movie automation         | `https://radarr.local`      |
+| **Lidarr**      | Music automation         | `https://lidarr.local`      |
+| **Readarr**     | Book automation          | `https://readarr.local`     |
+| **Mylar**       | Comic automation         | `https://mylar.local`       |
+| **Bazarr**      | Subtitle manager         | `https://bazarr.local`      |
+| **Prowlarr**    | Indexer manager          | `https://prowlarr.local`    |
+| **qBittorrent** | Torrent client           | `https://qbittorrent.local` |
+| **SABnzbd**     | Usenet downloader        | `https://sabnzbd.local`     |
 | **Huntarr**     | Missing Content Manager  | `https://huntarr.local`     |
 | **Jellyfin**    | Media server             | `https://jellyfin.local`    |
 | **Jellyseerr**  | Media requests interface | `https://jellyseerr.local`  |
