@@ -183,13 +183,10 @@ sudo chown -R $PUID:$PGID $FOLDER_FOR_MEDIA $FOLDER_FOR_DATA
 
 ## 🧱 Step 6: Pull and Deploy Containers
 
-Download the Docker Compose and `.env` files from the repo:
-
-🔗 [GitHub – InsafNilam/mediastack](https://github.com/InsafNilam/mediastack)
-
-Then, in `/opt/docker/mediastack`:
+> Clone the repository from GitHub: [InsafNilam/mediastack](https://github.com/InsafNilam/mediastack):
 
 ```bash
+cd /opt/docker/mediastack
 git clone https://github.com/InsafNilam/mediastack.git
 
 for file in *.yml; do
