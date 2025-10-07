@@ -348,6 +348,7 @@ jellyfin.local → 10.8.0.1
 The IP `10.8.0.1` corresponds to the WireGuard interface (`wg0`).
 These services will be accessible only when connected via VPN — ensuring full privacy.
 
+> All set? Great! Now head over to each service’s site and follow their setup guides to finish the configuration.
 ---
 
 ## 🧰 Optional: Troubleshooting
