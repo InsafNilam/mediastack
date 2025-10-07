@@ -126,7 +126,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 ---
 
-## 🧹 Step 2: Clean Up Old Docker Resources
+## 🧹 Step 2: Clean Up Resources (Optional)
 
 ```bash
 sudo docker container prune -f
@@ -137,7 +137,7 @@ sudo docker network prune -f
 
 ---
 
-## 📁 Step 3: Setup Media and Data Folders
+## 📁 Step 3: Setup Folders
 
 We’ll organize everything under `/opt/docker/mediastack`:
 
