@@ -5,7 +5,7 @@
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%2B-orange?logo=ubuntu)
 ![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)
 
-> Self-hosted **media automation stack** featuring Radarr, Sonarr, Prowlarr, Jellyfin, qBittorrent, SABnzbd, and more —  
+> Self-hosted **media automation stack** featuring Radarr, Sonarr, Prowlarr, Jellyfin, qBittorrent, SABnzbd, and more  
 > secured by **Gluetun VPN**, **WireGuard**, and **Nginx reverse proxy** with **mkcert SSL**.  
 > Privacy-first. Modular. Fully automated.
 
