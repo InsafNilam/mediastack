@@ -63,6 +63,7 @@ services:
       - 127.0.0.1:${WEBUI_PORT_SABNZBD:?err}:8080    # WebUI Portal: SABnzbd
       - 127.0.0.1:${WEBUI_PORT_SONARR:?err}:8989     # WebUI Portal: Sonarr
       - 127.0.0.1:${WEBUI_PORT_WHISPARR:?err}:6969   # WebUI Portal: Whisparr
+      - 127.0.0.1:${WEBUI_PORT_CHROME:?err}:3000 # WebUI Portal: Chrome
 
       - 127.0.0.1:${WEBUI_PORT_QBITTORRENT:?err}:${WEBUI_PORT_QBITTORRENT:?err} # WebUI Portal: qBittorrent
       - 127.0.0.1:${QBITTORRENT_PORT:?err}:6881
@@ -757,3 +758,40 @@ services:
     logging: *default-logging
 #    ports:
 #      - ${WEBUI_PORT_WHISPARR:?err}:6969             # Configured in Gluetun VPN container
+
+  ###########################################################################
+  ###########################################################################
+  ##
+  ##  Chrome - Browser
+  ##
+  ##  Docker Compose File: Browser (LinuxServer.io)
+  ##  Function: Browser
+  ##
+  ##  Documentation: https://docs.linuxserver.io/images/docker-chrome
+  ##
+  ###########################################################################
+  ###########################################################################
+  chrome:
+    image: lscr.io/linuxserver/chromium:latest
+    container_name: chrome
+    restart: unless-stopped
+    labels:
+      - deunhealth.restart.on.unhealthy=true
+    depends_on:
+      gluetun:
+        condition: service_healthy
+        restart: true
+    volumes:
+      - ${FOLDER_FOR_MEDIA:?err}:/config/downloads
+      - ${FOLDER_FOR_DATA:?err}/chrome:/config
+    environment:
+      - PUID=${PUID:?err}
+      - PGID=${PGID:?err}
+      - TZ=${TIMEZONE:?err}
+      - DOCKER_MODS=linuxserver/mods:universal-package-install
+      - INSTALL_PACKAGES=libfuse2|git|gdb
+    network_mode: "service:gluetun"
+    logging: *default-logging
+#    ports:
+#      - ${WEBUI_PORT_CHROME:?err}:3000             # Configured in Gluetun VPN container
+    shm_size: "1gb"
