@@ -67,6 +67,7 @@ Unlike most ARR stacks, Mediastack focuses on:
 | **Jellyfin**    | Media server             | `https://jellyfin.local`    |
 | **Jellyseerr**  | Media requests interface | `https://jellyseerr.local`  |
 | **Heimdall**    | Dashboard / landing page | `https://media.local`       |
+| **Chrome**      | Chrome Browser           | `https://browser.local`     |
 | **Gluetun**     | VPN gateway (WireGuard)  | Internal only               |
 
 ---
@@ -173,7 +174,7 @@ export PGID=1001  # grep mediastack /etc/group
 ### Create Application Folders
 
 ```bash
-sudo -E mkdir -p $FOLDER_FOR_DATA/{bazarr,gluetun,heimdall,jellyfin,jellyseerr,lidarr,mylar,prowlarr,qbittorrent,radarr,readarr,sabnzbd,sonarr,unpackerr,whisparr,filebot,huntarr}
+sudo -E mkdir -p $FOLDER_FOR_DATA/{bazarr,gluetun,heimdall,jellyfin,jellyseerr,lidarr,mylar,prowlarr,qbittorrent,radarr,readarr,sabnzbd,sonarr,unpackerr,whisparr,filebot,huntarr,chrome}
 sudo -E mkdir -p $FOLDER_FOR_MEDIA/{media/{anime,audio,books,comics,movies,music,photos,tv,xxx},usenet/{anime,audio,books,comics,complete,incomplete,movies,music,tv},torrents/{anime,audio,books,comics,complete,incomplete,movies,music,tv},watch,filebot/{input,output}}
 sudo chmod -R 775 $FOLDER_FOR_MEDIA $FOLDER_FOR_DATA
 sudo chown -R $PUID:$PGID $FOLDER_FOR_MEDIA $FOLDER_FOR_DATA
