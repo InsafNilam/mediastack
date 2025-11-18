@@ -382,7 +382,7 @@ Here are a few improved, professional alternatives for that line — depending o
 - Prefer **WireGuard** for secure access → [Privacy & Security Series](https://insafnilam.hashnode.dev/series/self-hosted-privacy-security).
 - For remote access via domain + HTTPS, use **Let’s Encrypt**:
   🔗 [Fortify Your Droplet with Free HTTPS (Let’s Encrypt)](https://insafnilam.hashnode.dev/fortify-your-droplet-unlock-free-https-with-lets-encrypt-ssl)
-- Consider **Portainer** for managing Docker containers. 
+- Consider **Portainer** for managing Docker containers.<br>
 **Note:** If Portainer shows *“Environment (local) is unreachable”* and the UI stops displaying your stacks or containers, your workloads are still running normally — only Portainer’s connection has failed. For causes and recovery guidance, see the official discussion:
   🔗 [https://github.com/orgs/portainer/discussions/12926](https://github.com/orgs/portainer/discussions/12926)
 
