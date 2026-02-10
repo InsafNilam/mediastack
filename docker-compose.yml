@@ -127,12 +127,14 @@ services:
     environment:
       - LOG_LEVEL=info
       - LOG_HTML=false
+      - SESSION_TIMEOUT=600
       - CAPTCHA_SOLVER=none
       - TZ=${TIMEZONE:?err}
     network_mode: "service:gluetun"
     logging: *default-logging
   #    ports:
   #      - ${WEBUI_PORT_FLARESOLVERR:?err}:8191             # Configured in Gluetun VPN container
+    shm_size: 1gb
 
   ###########################################################################
   ###########################################################################
