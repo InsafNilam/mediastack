@@ -268,6 +268,24 @@ services:
   #    ports:
   #      - ${WEBUI_PORT_HUNTARR:?err}:9705                # Configured in Gluetun VPN container
 
+  # huntarr:
+    # image: iampuid0/neutarr:latest
+    # container_name: huntarr
+    # depends_on:
+      # gluetun:
+        # condition: service_healthy
+        # restart: true
+    # volumes:
+      # - ${FOLDER_FOR_DATA:?err}/huntarr:/config
+    # environment:
+      # - PUID=${PUID:?err}
+      # - PGID=${PGID:?err}
+      # - TZ=${TIMEZONE:?err}
+    # network_mode: "service:gluetun"
+    # logging: *default-logging
+  #    ports:
+  #      - ${WEBUI_PORT_HUNTARR:?err}:9705  
+
   ###########################################################################
   ###########################################################################
   ##
